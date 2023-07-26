@@ -26,11 +26,42 @@ body{
 
 }
 
+@media (max-width:700px){
+    .quotecontainer{
+        background: #fff;
+        width: 270px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 10px 20px 0px rgba(0 , 0 , 0 , 0.55);
+        font-family: 'Playfair Display', serif;
+    
+    }
+
+    
+    
+}
+
  
 .quotecontainer h2{
     font-size: 45px;
     margin-bottom: 40px;
     position: relative;
+}
+
+@media(max-width:700px){
+
+    .quotecontainer h2{
+        font-size: 28px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    
 }
 .quotecontainer h2::after{
     content: '';
@@ -42,6 +73,20 @@ body{
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media(max-width:700px){
+
+    #quote{
+        font-size: 20px;
+        min-height: 80px;
+    
+    }
+
+    #author{
+        font-size: 14px;
+    }
+
 }
 
 .quotecontainer blockquote{
@@ -80,6 +125,9 @@ body{
     width: 100%;
 }
 
+
+
+
 .quotecontainer button{
     background:blueviolet ;
     color: #fff;
@@ -101,6 +149,33 @@ body{
     height: 20px;
     margin-right: 6px;
 }
+@media(max-width:700px){
+
+    .quotecontainer button{
+        background:blueviolet ;
+        color: #fff;
+        border-radius: 20px;
+        border: 1px solid blueviolet;
+        width: 140px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        cursor:pointer;
+        font-size: 12x;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .quotecontainer button img{
+        width: 19px;
+        height: 16px;
+        margin-right: 5px;
+    }
+
+}
+
+
 
 .quotecontainer button:nth-child(2){
     background: transparent;
