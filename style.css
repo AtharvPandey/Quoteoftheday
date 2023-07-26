@@ -173,6 +173,16 @@ body{
         margin-right: 5px;
     }
 
+    .quotecontainer span::before{
+        content: '';
+        width: 12px;
+        height: 2px;
+        background: blueviolet;
+        position: absolute;
+        top: 50%;
+        left: -15px;
+    }
+
 }
 
 
